@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(241, 238, 235) !important;
+}
+
+.clip-rect {
+    clip-path: rect(0, 150px, 100px, 0);
+}
+
+.clip-circle {
+    clip-path: circle(50%);
+}
+
+.clip-ellipse {
+    clip-path: ellipse(75px 50px);
+}
+
+.clip-polygon {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-path {
+    clip-path: path('M10 10 H 90 V 90 H 10 L 10 10');
+}
