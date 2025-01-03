@@ -7,6 +7,10 @@ body{
 }
 
 .clip-circle {
+    clip-path: circle(75% at 50% 50%);
+   /*  clip-path: circle(0% at 50% 50%); */
+}
+.clip-circle:hover{
     clip-path: circle(50%);
 }
 
@@ -20,4 +24,28 @@ body{
 
 .clip-path {
     clip-path: path('M10 10 H 90 V 90 H 10 L 10 10');
+}
+
+/* animated */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #87ff7c, #d262e2);
+    clip-path: circle(0% at 50% 50%);
+    animation: expandCircle 2s ease-in-out infinite;
+}
+
+@keyframes expandCircle {
+    0% {
+        clip-path: circle(0% at 50% 50%);
+    }
+
+    50% {
+        clip-path: circle(75% at 50% 50%);
+    }
+
+    100% {
+        clip-path: circle(0% at 50% 50%);
+    }
 }
